@@ -1,0 +1,71 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: navy;
+}
+
+.fa-accusoft {
+  font-size: 50px;
+  color: yellow;
+}
+
+.navbutton:hover {
+  background-color: bisque;
+}
+
+.right,
+.hidden {
+  width: 50px;
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .context {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .navbutton {
+    display: none;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .line {
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: inline;
+  }
+
+  .navbutton.active,
+  .right.active {
+    display: inline;
+  }
+}
